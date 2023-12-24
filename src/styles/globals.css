@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;700&family=VT323&display=swap');
+
+@layer base {
+  body {
+    @apply bg-[#161616] overflow-x-hidden;
+  }
+  .font-inknut {
+    font-family: 'Inknut Antiqua', serif;
+  }
+  .font-vt323 {
+    font-family: 'VT323', monospace;
+  }
+}

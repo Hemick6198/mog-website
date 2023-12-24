@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Nav() {
   return (
-    <div className="container border-2 shadow-lg bg-gradient-to-r from-[#54F0D8] to-[#FBEF89] w-full max-w-[1200px] h-18 flex border-black">
+    <div className="container mt-1 border-2 shadow-lg bg-gradient-to-r from-[#54F0D8] to-[#FBEF89] w-full max-w-[1200px] h-18 flex border-black">
       <div className=" flex-row border-black border-2 justify-between flex w-full">
         <div className="nav--logo flex p-2   justify-between">
           <Image

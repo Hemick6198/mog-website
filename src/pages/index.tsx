@@ -1,5 +1,7 @@
-import Nav from "@/components/Nav";
 import Image from "next/image";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import About from "@/components/About";
 import MogIcon from "@/assets/logo.png";
 import twitterIcon from "@/assets/icon.png";
 import dexTools from "@/assets/icon-2.png";
@@ -9,17 +11,19 @@ import coinMarketCap from "@/assets/icon-5.png";
 import etherscan from "@/assets/icon-6.png";
 import uniswapLogo from "@/assets/uniswapLogo.png";
 import bitgetLogo from "@/assets/bitgetLogo.png";
-import LBankLogo from "@/assets/LBankLogo.png";
 import PoloniexLogo from "@/assets/PoloniexLogo.png";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div className="bg-black m-auto w-full">
-      <div className=" w-full flex items-center justify-center">
+    <div className="m-auto w-full">
+      <div className=" w-full flex items-center justify-center pt-4">
         <Nav />
       </div>
       <div className="landing__title flex flex-col justify-center items-center w-full">
-        <h1 className="text-5xl pt-[75px] pb-[200px] text-white">The Ticker Is $MOG</h1>
+        <h1 className="text-xl pt-[50px] pb-[200px] text-white font-vt323">
+          The Ticker Is $MOG
+        </h1>
         <div className="landing__icon--container">
           <div className="landing__mog--icon">
             <Image
@@ -57,9 +61,9 @@ export default function Home() {
             <Image src={etherscan} alt="iconlinks" width={110} height={110} />
           </div>
         </div>
-        <div className="landing__bottom--links text-[#0500FF] flex py-24 font-semibold">
-          <button className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 bg-[#D2D4D8]">
-            Uniswap
+        <div className="landing__bottom--links text-[#0500FF] flex py-28 font-semibold">
+          <a className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 w-[140px] bg-[#D2D4D8] cursor-pointer">
+            <h3>Uniswap</h3>
             <Image
               alt="link-logos"
               src={uniswapLogo}
@@ -67,9 +71,13 @@ export default function Home() {
               height={30}
               className="pl-2"
             />
-          </button>
-          <button className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 bg-[#D2D4D8]">
-            Bitget
+          </a>
+          <a
+            href="https://www.bitget.com/spot/MOGUSDT"
+            className="landing__bottom--link flex items-center justify-center mx-4 px-7 py-1 w-[140px] bg-[#D2D4D8]"
+            target="_blank"
+          >
+            <h3>Bitget</h3>
             <Image
               alt="link-logos"
               src={bitgetLogo}
@@ -77,19 +85,13 @@ export default function Home() {
               height={30}
               className="pl-2"
             />
-          </button>
-          <button className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 bg-[#D2D4D8]">
-            LBank
-            <Image
-              alt="link-logos"
-              src={LBankLogo}
-              width={30}
-              height={30}
-              className="pl-2"
-            />
-          </button>
-          <button className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 bg-[#D2D4D8]">
-            Poloniex
+          </a>
+          <a
+            href="https://poloniex.com/trade/MOG_USDT"
+            className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 bg-[#D2D4D8] w-[140px]"
+            target="_blank"
+          >
+            <h3>Poloniex</h3>
             <Image
               alt="link-logos"
               src={PoloniexLogo}
@@ -97,9 +99,13 @@ export default function Home() {
               height={30}
               className="pl-2"
             />
-          </button>
-          <button className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 bg-[#D2D4D8]">
-            Opnx
+          </a>
+          <a
+            href="https://opnx.com/en/markets/1000MOG-oUSD-SWAP-LIN"
+            target="_blank"
+            className="landing__bottom--link flex items-center justify-center mx-4 px-2 py-1 bg-[#D2D4D8] w-[140px]"
+          >
+            <h3>Opnx</h3>
             <Image
               alt="link-logos"
               src={PoloniexLogo}
@@ -107,9 +113,12 @@ export default function Home() {
               height={30}
               className="pl-2"
             />
-          </button>
+          </a>
         </div>
       </div>
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }
