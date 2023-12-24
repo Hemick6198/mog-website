@@ -12,18 +12,16 @@ function About() {
           </div>
         </div>
         <div className="nav_about flex flex-col w-1/3">
-          <h1 className="text-white mt-1 text-xl font-vt323">
-            About MOG
-          </h1>
+          <h1 className="text-white mt-1 text-xl font-vt323">About MOG</h1>
           <p className="nav_about-content text-white pt-20 text-lg font-inknut">
             $MOG is powerful, mog is effortless. It incites envy, it is
             boastful, it is proud. It dominates others, it is self-perpetuating,
             it is a swarm, it keeps receipts of wrongs. Mog delights in winning
-            and rejoices in glory. <br />
+            and rejoices in glory.
             <p className="pt-10">
               DISCLAIMER: $MOG is a memecoin with no intrinsic value or
               expectation of financial return.
-            </p>{" "}
+            </p>
           </p>
         </div>
       </div>
