@@ -18,10 +18,10 @@ function About() {
             boastful, it is proud. It dominates others, it is self-perpetuating,
             it is a swarm, it keeps receipts of wrongs. Mog delights in winning
             and rejoices in glory.
-            <p className="pt-10">
-              DISCLAIMER: $MOG is a memecoin with no intrinsic value or
-              expectation of financial return.
-            </p>
+          </p>
+          <p className="pt-10 text-white font-inknut">
+            DISCLAIMER: $MOG is a memecoin with no intrinsic value or
+            expectation of financial return.
           </p>
         </div>
       </div>

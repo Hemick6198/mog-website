@@ -13,6 +13,8 @@ import uniswapLogo from "@/assets/uniswapLogo.png";
 import bitgetLogo from "@/assets/bitgetLogo.png";
 import PoloniexLogo from "@/assets/PoloniexLogo.png";
 import Contact from "@/components/Contact";
+import How from "@/components/How";
+import Coinswap from "@/components/Coinswap";
 
 export default function Home() {
   return (
@@ -128,6 +130,8 @@ export default function Home() {
           </div>
         </div>
         <About />
+        <How />
+        <Coinswap />
         <Contact />
       </div>
       <Footer />
